@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WHP - Winnipeg Home Pros | Home Services</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logoContainer">
+            <img src="./logo.jpg" alt="Winnipeg Home Pros Logo" width="50" height="50" loading="lazy">
+            <span>Winnipeg <br>Home Pros</span>
+        </div>
+        <div class="informationContainer">
+            <input type="text" id="location" placeholder="Enter your address" required>
+        </div>
+    </nav>
+
+    <main>
+        <h1 class="sr-only">Home Services</h1>
+        <div id="servicesList">
+            <div class="serviceCard heating" role="button" tabindex="0" aria-label="Heating Services">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2v4M4 13a8 8 0 0 1 8-7 8 8 0 1 1-8 7z"/>
+                        <path d="M12 9v4M8 13h8m-4 4v4m-4 0h8"/>
+                    </svg>
+                </div>
+                <h3>Heating</h3>
+                <p>Furnace repair, boiler service, thermostat issues</p>
+            </div>
+        
+            <div class="serviceCard plumbing" role="button" tabindex="0" aria-label="Plumbing Services">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 2v6h3v4a3 3 0 0 1-3 3H9a3 3 0 0 1-3-3V8h3V2"/>
+                        <path d="M6 8v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V8"/>
+                    </svg>
+                </div>
+                <h3>Plumbing</h3>
+                <p>Leaks, clogs, pipe repairs, fixture installation</p>
+            </div>
+        
+            <div class="serviceCard ac" role="button" tabindex="0" aria-label="AC Services">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 7a5 5 0 0 0-10 0"/>
+                        <path d="M12 17v4"/>
+                        <path d="M16 21a1 1 0 0 0 1-1v-1a2 2 0 0 1 4 0v1a1 1 0 0 0 1 1"/>
+                        <path d="M7 21a1 1 0 0 0 1-1v-1a2 2 0 0 1 4 0v1a1 1 0 0 0 1 1"/>
+                    </svg>
+                </div>
+                <h3>AC</h3>
+                <p>Cooling issues, refrigerant recharge, unit replacement</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
