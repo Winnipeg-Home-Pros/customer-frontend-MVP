@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@google/generative-ai@0.1.0/dist/index.umd.js"></script>
     <title>WHP - Winnipeg Home Pros | Home Services</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +34,7 @@
                 <h3>Heating</h3>
                 <p>Furnace repair, boiler service, thermostat issues</p>
             </div>
-        
+
             <div class="serviceCard plumbing" role="button" tabindex="0" aria-label="Plumbing Services">
                 <div class="icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -44,7 +45,7 @@
                 <h3>Plumbing</h3>
                 <p>Leaks, clogs, pipe repairs, fixture installation</p>
             </div>
-        
+
             <div class="serviceCard ac" role="button" tabindex="0" aria-label="AC Services">
                 <div class="icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -59,6 +60,23 @@
             </div>
         </div>
     </main>
+
+    <div id="chatbotModal" class="hidden">
+        <div class="chatbotContent">
+            <h2>Heating Support - Winnipeg Homes</h2>
+            <div id="chatLog">
+                <p class="bot">Hi! Need help with heating? Try these:</p>
+                <ul>
+                    <li>Why is my furnace blowing cold air?</li>
+                    <li>How often should I service my boiler?</li>
+                    <li>What to do if my thermostat is not responding?</li>
+                </ul>
+            </div>
+            <textarea id="userInput" placeholder="Ask your heating question here..."></textarea>
+            <button id="sendBtn">Send</button>
+            <button id="closeChat">Close</button>
+        </div>
+    </div>
 
     <script src="script.js" defer></script>
 </body>
